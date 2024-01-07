@@ -23,7 +23,6 @@ export const Modal = ({ onCloseModal, modalData }) => {
       onCloseModal();
     }
   };
-
   const { largeImageURl, tags } = modalData;
   return (
     <div className={css.Overlay} onClick={handleCloseModal}>
