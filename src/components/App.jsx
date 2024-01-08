@@ -113,6 +113,7 @@ export const App = () => {
             'Sorry there are no images matching your search query.'
           );
           setStatus(STATUSES.idle);
+          setLoadMore(false);
           return;
         }
         setImages(prevState => [...prevState, ...hits]);
