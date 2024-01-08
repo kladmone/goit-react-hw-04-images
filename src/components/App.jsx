@@ -64,7 +64,6 @@ import { Loader } from './Loader/Loader';
 //       isOpenModal: false,
 //     });
 //   };
-
 //   render() {
 //     const { isLoadMore, isOpenModal, status } = this.state;
 //     return (
