@@ -117,13 +117,16 @@ export const App = () => {
         }
         setImages(prevState => [...prevState, ...hits]);
         setLoadMore(page < Math.ceil(totalHits / 12));
-      } catch (error) {
-        setError(error.message);
+      } catch (errorMessage) {
+        setError(error);
         setStatus(STATUSES.error);
+        Notiflix.Notify.failure(
+          `${errorMessage} please wait a few minutes before you try again`
+        );
       }
     };
     addImages();
-  }, [query, page]);
+  }, [query, page, error]);
 
   const handleSubmit = searchQuery => {
     if (query === searchQuery) {
