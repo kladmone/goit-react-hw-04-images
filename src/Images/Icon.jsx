@@ -19,4 +19,4 @@ const Icon = ({ className }) => {
   );
 };
 
-export default Icon;
+export { Icon };

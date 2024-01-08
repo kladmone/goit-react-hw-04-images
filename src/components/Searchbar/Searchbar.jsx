@@ -1,4 +1,4 @@
-import Icon from 'Images/Icon';
+import { Icon } from 'Images/Icon';
 import css from './Searchbar.module.css';
 import { useState } from 'react';
 
